@@ -1,0 +1,260 @@
+body {
+    background-color: #fff;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.landing h1 {
+    font-size: 50px;
+}
+.navbar{
+    background-color: #f4f4f4;
+
+}
+.nav-link {
+    position: relative;
+}
+.nav-link.active::after {
+    width: 100%;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: 0.4s;
+    height: 3px;
+    background-color: grey;
+}
+.nav-item {
+    width: fit-content;
+}
+.animate::after{
+content: " |";
+animation-name: typing;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0% { content: " L|" }
+    5% { content: " LAR|" }
+    10% { content: " LARRY|" }
+    15% { content: " LARRY DA|" }
+    20% { content: "LARRY DANI|" }
+    25% { content: "LARRY DANIALS|" }
+    28% { content: " LARRY DANI|" }
+    30% { content: "LARRY DA |" }
+    32% { content: " LARRY|" }
+    34% { content: " LAR|" }
+    36% { content: " LA|" }
+    38% { content: " L|" }
+     40% { content: " DE|" }
+     45% { content: " DEVE|" }
+     50% { content: " DEVELO|" }
+     55% { content: "DEVELOPER |" }
+     57% { content: " DEVELOP|" }
+   60% { content: " DEVEL|" }
+62% { content: " DEV|" }
+64% { content: "D |" }
+66% { content: " |" }
+68% { content: " D|" }
+70% { content: " DE|" }
+75% { content: " DES|" }
+80% { content: " DESIG|" }
+80% { content: " DESIGNE|" }
+90% { content: " DESIGNER|" }
+92% { content: " DESIGN|" }
+94% { content: "DESI |" }
+96% { content: "DES |" }
+98% { content: "DE |" }
+99% { content: "D |" }
+100% { content: " |" }
+
+}
+#ABOUT .btn-primary{
+    background-color: black;
+    color: white;
+}
+#ABOUT .btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+#ABOUT .btn-secondary{
+    background-color: white;
+    color: black;
+}
+#ABOUT .btn-secondary:hover {
+    background-color: black;
+    color: white;
+}
+
+.circle {
+    display: block;
+    background-color: #f4f4f4;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.5s;
+}
+.services-card:hover .circle {
+    background-color: black;
+    color: white;
+}
+#PORTFOLLIO .port-img .layyer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: 0.3s;
+}
+#PORTFOLLIO .port-img:hover .layyer {
+    opacity: 1;
+    border: 10px solid #cbcccd;
+}
+.circleeee {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.circleeee:hover {
+    background-color: white;
+    color: black;
+}
+.port-img {
+    transition: 0.3s;
+    overflow: hidden;
+}
+.port-fit {
+    width: fit-content;
+}
+#TESTIMONIAL {
+    background-color: #f4f4f4;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+#TESTIMONIAL img {
+    width: 90px;
+}
+#TESTIMONIAL button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+#TESTIMONIAL button:hover {
+    background-color: black;
+}
+.circlee {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.5s;
+}
+#COUNTER {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#BLOG {
+    background-color: #f4f4f4;
+}
+.blog-card {
+    background-color: #343434;
+}
+#BLOG .layyerrr {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transform: rotateY(180deg) scale(0);
+    transition: 0.5s;
+}
+#BLOG .blog-card:hover .layyerrr {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+
+}
+.blog-img:hover {
+    transform: scale(1.1);
+}
+#BLOG .port-content:hover .layyerrr {
+    opacity: 1;
+
+}
+.blog-img {
+    transition: 0.3s;
+    overflow: hidden;
+}
+.circleee {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.clr {
+    clear: both;
+}
+#CONTACT {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#CONTACT .row {
+    background-color: white;
+}
+#CONTACT button{
+
+    background-color: black;
+}
+#CONTACT button:hover{
+    color: black;
+    background-color: white;
+}
